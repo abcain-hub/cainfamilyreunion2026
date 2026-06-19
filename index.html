@@ -351,6 +351,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   <div class="timeline">
     <div class="tl-item"><div class="tl-dot meal"></div><div class="tl-card meal"><div class="card-top"><span class="card-icon">🍳</span><span class="card-title">Brunch in the Clubhouse</span><span class="card-time meal">8:00 AM</span></div></div></div>
     <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport has-modal" onclick="document.getElementById('modal-rodeo').classList.add('open')"><div class="card-top"><span class="card-icon">🤠</span><span class="card-title">Depart for Choteau American Legion Independence Day Rodeo</span><span class="card-time transport">10:00 AM</span></div><p class="card-detail">13 Rodeo Lane · Choteau, MT 59422</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;"><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-rodeo').classList.add('open')">Quick Summary →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-rodeo-history').classList.add('open')">History →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-rodeo-events').classList.add('open')">Rodeo Events →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-rodeo-expect').classList.add('open')">What to Expect →</span></div></div></div>
+    <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport has-modal" onclick="document.getElementById('modal-rodeo-directions').classList.add('open')"><div class="card-top"><span class="card-icon">🗺️</span><span class="card-title">Step-by-Step Driving Directions to Choteau Rodeo</span></div><p class="card-detail">79.3 miles · 1 hr 26 min from the ranch</p><span class="card-view-details">View Directions →</span></div></div>
     <div class="tl-item"><div class="tl-dot bingo"></div><div class="tl-card bingo"><div class="card-top"><span class="card-icon">🎆</span><span class="card-title">4th of July Bingo</span><span class="card-time bingo">5:15 PM</span></div></div></div>
     <div class="tl-item"><div class="tl-dot meal"></div><div class="tl-card meal"><div class="card-top"><span class="card-icon">🍽️</span><span class="card-title">4th of July Cows &amp; Cocktails with Dinner</span><span class="card-time meal">6:00 PM</span></div><p class="card-detail">Special Independence Day celebration dinner at the ranch</p></div></div>
     <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport"><div class="card-top"><span class="card-icon">🥐</span><span class="card-title">Breakfast Sandwiches &amp; Cinnamon Rolls to Go</span></div><p class="card-detail">For 5</p></div></div>
@@ -544,6 +545,45 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <p class="site-meta"><strong>Date:</strong> Saturday, July 4, 2026</p>
       <div class="site-section">About</div>
       <p class="site-addinfo">Experience an authentic Montana 4th of July rodeo! The Choteau American Legion puts on one of the finest small-town Independence Day rodeos in Big Sky Country — complete with bull riding, barrel racing, roping, and all the western festivities that make the holiday special. A perfect way to celebrate the 4th of July in true Montana style!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Rodeo Driving Directions -->
+<div id="modal-rodeo-directions" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🗺️ Driving Directions</span><button class="site-modal-close" onclick="document.getElementById('modal-rodeo-directions').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🗺️ Ranch → Choteau Rodeo</h2>
+      <p class="site-meta"><strong>Total:</strong> 79.3 miles · 1 hr 26 min</p>
+      <p class="site-meta"><strong>Destination:</strong> American Legion Rodeo Grounds · 13 Rodeo Lane, Choteau, MT 59422</p>
+
+      <div class="site-section">Segment 1 — Take Armington Rd to US-87 N <span style="font-weight:400;font-size:12px;">(4 min · 1.8 mi)</span></div>
+      <ol style="margin:0 0 14px 18px;padding:0;line-height:2;color:var(--navy);font-size:14px;">
+        <li>Head toward Clubhouse Rd <em style="color:var(--mid-gray);font-size:12px;">(⚠️ restricted usage road · 89 ft)</em></li>
+        <li>Continue onto Clubhouse Rd <em style="color:var(--mid-gray);font-size:12px;">(⚠️ restricted usage road · 0.2 mi)</em></li>
+        <li>Turn right onto Armington Rd <em style="color:var(--mid-gray);font-size:12px;">(1.6 mi)</em></li>
+      </ol>
+
+      <div class="site-section">Segment 2 — Take US-89 N to 1st St SE in Choteau <span style="font-weight:400;font-size:12px;">(1 hr 21 min · 77.2 mi)</span></div>
+      <ol start="4" style="margin:0 0 14px 18px;padding:0;line-height:2;color:var(--navy);font-size:14px;">
+        <li>Turn left onto US-87 N <em style="color:var(--mid-gray);font-size:12px;">(0.1 mi)</em></li>
+        <li>At the traffic circle, take the 2nd exit onto US-87 N / US-89 N — continue to follow US-89 N <em style="color:var(--mid-gray);font-size:12px;">(pass Arby's on the right in 23 mi · 25.3 mi total)</em></li>
+        <li>Slight right to merge onto I-15 N / State Rte 200 W / US-89 N toward Shelby <em style="color:var(--mid-gray);font-size:12px;">(11.3 mi)</em></li>
+        <li>Take exit 290 for US-89 N / MT-200 W toward Choteau / Missoula <em style="color:var(--mid-gray);font-size:12px;">(0.3 mi)</em></li>
+        <li>Continue onto MT-200 W / US-89 N <em style="color:var(--mid-gray);font-size:12px;">(7.9 mi)</em></li>
+        <li>Turn right onto US-89 N <em style="color:var(--mid-gray);font-size:12px;">(32.2 mi)</em></li>
+      </ol>
+
+      <div class="site-section">Segment 3 — Continue on 1st St SE to Rodeo Rd <span style="font-weight:400;font-size:12px;">(2 min · 0.3 mi)</span></div>
+      <ol start="10" style="margin:0 0 14px 18px;padding:0;line-height:2;color:var(--navy);font-size:14px;">
+        <li>Turn right onto 1st St SE <em style="color:var(--mid-gray);font-size:12px;">(0.3 mi)</em></li>
+        <li>Turn right onto Rodeo Rd — <strong>destination will be on the left</strong> <em style="color:var(--mid-gray);font-size:12px;">(367 ft)</em></li>
+      </ol>
+
+      <div style="background:var(--light-gray);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--navy);margin-top:4px;">
+        📍 <strong>American Legion Rodeo Grounds</strong><br>13 Rodeo Lane · Choteau, MT 59422
+      </div>
     </div>
   </div>
 </div>
