@@ -350,7 +350,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   <div class="note red">🇺🇸 <span><strong>Happy 4th of July!</strong> Today we celebrate with a real Montana rodeo in Choteau, followed by an evening of Cows & Cocktails and fireworks at the ranch!</span></div>
   <div class="timeline">
     <div class="tl-item"><div class="tl-dot meal"></div><div class="tl-card meal"><div class="card-top"><span class="card-icon">🍳</span><span class="card-title">Brunch in the Clubhouse</span><span class="card-time meal">8:00 AM</span></div></div></div>
-    <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport has-modal" onclick="document.getElementById('modal-rodeo').classList.add('open')"><div class="card-top"><span class="card-icon">🤠</span><span class="card-title">Depart for Choteau American Legion Independence Day Rodeo</span><span class="card-time transport">10:00 AM</span></div><p class="card-detail">13 Rodeo Lane · Choteau, MT 59422</p><span class="card-view-details">View Details →</span></div></div>
+    <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport has-modal" onclick="document.getElementById('modal-rodeo').classList.add('open')"><div class="card-top"><span class="card-icon">🤠</span><span class="card-title">Depart for Choteau American Legion Independence Day Rodeo</span><span class="card-time transport">10:00 AM</span></div><p class="card-detail">13 Rodeo Lane · Choteau, MT 59422</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;"><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-rodeo').classList.add('open')">Quick Summary →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-rodeo-history').classList.add('open')">History →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-rodeo-events').classList.add('open')">Rodeo Events →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-rodeo-expect').classList.add('open')">What to Expect →</span></div></div></div>
     <div class="tl-item"><div class="tl-dot bingo"></div><div class="tl-card bingo"><div class="card-top"><span class="card-icon">🎆</span><span class="card-title">4th of July Bingo</span><span class="card-time bingo">5:15 PM</span></div></div></div>
     <div class="tl-item"><div class="tl-dot meal"></div><div class="tl-card meal"><div class="card-top"><span class="card-icon">🍽️</span><span class="card-title">4th of July Cows &amp; Cocktails with Dinner</span><span class="card-time meal">6:00 PM</span></div><p class="card-detail">Special Independence Day celebration dinner at the ranch</p></div></div>
     <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport"><div class="card-top"><span class="card-icon">🥐</span><span class="card-title">Breakfast Sandwiches &amp; Cinnamon Rolls to Go</span></div><p class="card-detail">For 5</p></div></div>
@@ -544,6 +544,69 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <p class="site-meta"><strong>Date:</strong> Saturday, July 4, 2026</p>
       <div class="site-section">About</div>
       <p class="site-addinfo">Experience an authentic Montana 4th of July rodeo! The Choteau American Legion puts on one of the finest small-town Independence Day rodeos in Big Sky Country — complete with bull riding, barrel racing, roping, and all the western festivities that make the holiday special. A perfect way to celebrate the 4th of July in true Montana style!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Rodeo History -->
+<div id="modal-rodeo-history" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🤠 Rodeo History</span><button class="site-modal-close" onclick="document.getElementById('modal-rodeo-history').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🤠 Nearly 80 Years of Tradition</h2>
+      <div class="site-section">Background</div>
+      <p class="site-addinfo">The Choteau American Legion Independence Day Rodeo has been running for nearly eight decades — the 2024 event was the 78th annual, placing its origins around 1946, shortly after World War II. It is organized by C. James Smith American Legion Post 6 and has become the centerpiece of Choteau's Fourth of July celebration.</p>
+      <div class="site-section">Significance</div>
+      <p class="site-addinfo">Historically one of the largest one-day rodeos sanctioned by the Northern Rodeo Association (NRA), the event is deeply tied to the American Legion's mission to promote patriotism, tourism, and preservation of the American rodeo tradition. For many Montana families, attending Choteau on the Fourth is an annual tradition passed from generation to generation.</p>
+      <div class="site-section">The Setting</div>
+      <p class="site-addinfo">Choteau sits along Montana's Rocky Mountain Front — one of the most scenic areas in the state. Spectators enjoy views of the mountains, open ranch country, and big Montana skies. Many visitors say the location itself is worth the trip.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Rodeo Events -->
+<div id="modal-rodeo-events" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🤠 Rodeo Events</span><button class="site-modal-close" onclick="document.getElementById('modal-rodeo-events').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🤠 Competition Events</h2>
+      <div class="site-section">Sanctioned by Northern Rodeo Association</div>
+      <ul style="margin:0 0 0 18px;padding:0;line-height:2.1;color:var(--navy);font-size:14px;">
+        <li>Bull Riding</li>
+        <li>Bareback Riding</li>
+        <li>Saddle Bronc Riding</li>
+        <li>Steer Wrestling</li>
+        <li>Team Roping</li>
+        <li>Tie-Down Roping</li>
+        <li>Breakaway Roping</li>
+        <li>Barrel Racing</li>
+        <li>Junior Events (for younger competitors)</li>
+      </ul>
+      <div class="site-section" style="margin-top:14px;">Livestock</div>
+      <p class="site-addinfo">Jacobs Rodeo Company supplies much of the livestock, well known for bringing quality bucking stock. The rodeo regularly attracts top regional competitors and offers a substantial purse.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Rodeo What to Expect -->
+<div id="modal-rodeo-expect" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🤠 What to Expect</span><button class="site-modal-close" onclick="document.getElementById('modal-rodeo-expect').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🤠 Visitor Guide</h2>
+      <div class="site-section">Before the Rodeo</div>
+      <p class="site-addinfo">Many people arrive early and spend time in downtown Choteau. The town is small (~1,700 residents), so during rodeo weekend the entire community feels like it's participating. Restaurants, shops, and local businesses are busy throughout the holiday.</p>
+      <div class="site-section">At the Grounds</div>
+      <ul style="margin:0 0 12px 18px;padding:0;line-height:2;color:var(--navy);font-size:14px;">
+        <li>Large crowds &amp; families</li>
+        <li>Western attire everywhere</li>
+        <li>Food vendors &amp; beer garden</li>
+        <li>Local nonprofits operating concessions</li>
+        <li>American flag ceremonies &amp; veteran recognition</li>
+        <li>Patriotic presentations</li>
+      </ul>
+      <div class="site-section">The Atmosphere</div>
+      <p class="site-addinfo">The crowd is knowledgeable about rodeo — spectators cheer loudly for successful rides and actively support local competitors. The rodeo moves quickly from event to event, keeping the action constant. Unlike highly commercialized rodeos, Choteau still feels like a community event built by local volunteers. People often describe it as "old Montana" or "real Montana."</p>
     </div>
   </div>
 </div>
