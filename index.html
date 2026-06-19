@@ -434,6 +434,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <div class="tl-item" style="margin-bottom:0;"><div class="tl-dot activity"></div><div class="tl-card activity"><div class="card-top"><span class="card-icon">🥾</span><span class="card-title">Self-Guided Hiking at Memorial Falls</span><span class="card-time activity">9:00 AM</span></div><p class="card-detail">For 12 · Off-site adventure</p></div></div>
     </div>
 
+    <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport has-modal" onclick="document.getElementById('modal-falls-directions').classList.add('open')"><div class="card-top"><span class="card-icon">🗺️</span><span class="card-title">Step-by-Step Driving Directions to Memorial Falls</span></div><p class="card-detail">35.3 miles · 39 min from the ranch</p><span class="card-view-details">View Directions →</span></div></div>
+
     <div class="tl-item"><div class="tl-dot ride"></div><div class="tl-card ride has-modal" onclick="document.getElementById('modal-ride').classList.add('open')"><div class="card-top"><span class="card-icon">🐎</span><span class="card-title">Creekside Trail Ride</span><span class="card-time ride">4:00 PM</span></div><p class="card-detail">For 5 · Adam, Carter, Max, Alexa & Jaxon</p><p class="card-detail">📍 Meet at Clubhouse</p><span class="card-view-details">View Details →</span></div></div>
     <div class="tl-item"><div class="tl-dot bingo"></div><div class="tl-card bingo"><div class="card-top"><span class="card-icon">🤠</span><span class="card-title">Wild West Bingo</span><span class="card-time bingo">5:15 PM</span></div></div></div>
     <div class="tl-item"><div class="tl-dot meal"></div><div class="tl-card meal"><div class="card-top"><span class="card-icon">🍽️</span><span class="card-title">Dinner in the Clubhouse</span><span class="card-time meal">6:00 PM</span></div><p class="card-detail">For 16</p></div></div>
@@ -798,6 +800,30 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
         <li>Insect repellent</li>
         <li>Waterproof jacket</li>
       </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Memorial Falls Driving Directions -->
+<div id="modal-falls-directions" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🗺️ Driving Directions</span><button class="site-modal-close" onclick="document.getElementById('modal-falls-directions').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🗺️ Ranch → Memorial Falls</h2>
+      <p class="site-meta"><strong>Total:</strong> 35.3 miles · 39 min</p>
+      <p class="site-meta"><strong>Destination:</strong> Memorial Falls, Montana 59465</p>
+      <div class="site-section">Step-by-Step Directions</div>
+      <ol style="margin:0 0 14px 18px;padding:0;line-height:2.1;color:var(--navy);font-size:14px;">
+        <li>Head toward Clubhouse Rd <em style="color:var(--mid-gray);font-size:12px;">(89 ft · Restricted usage road)</em></li>
+        <li>Continue onto Clubhouse Rd <em style="color:var(--mid-gray);font-size:12px;">(0.2 mi · Restricted usage road)</em></li>
+        <li>Turn left onto Armington Rd <em style="color:var(--mid-gray);font-size:12px;">(2.8 mi)</em></li>
+        <li>Turn left onto US-89 S/Kings Hill Scenic Bywy <em style="color:var(--mid-gray);font-size:12px;">(32.3 mi)</em></li>
+        <li>Turn left <em style="color:var(--mid-gray);font-size:12px;">(272 ft)</em></li>
+      </ol>
+      <div style="background:var(--light-gray);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--navy);margin-top:4px;">
+        📍 <strong>Memorial Falls</strong><br>Montana 59465
+      </div>
+      <p style="margin-top:10px;font-size:12px;color:var(--mid-gray);">⚠️ Note: This route uses restricted usage or private roads.</p>
     </div>
   </div>
 </div>
