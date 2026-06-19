@@ -464,6 +464,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <div class="tl-item" style="margin-bottom:0;"><div class="tl-dot activity"></div><div class="tl-card activity has-modal" onclick="document.getElementById('modal-float').classList.add('open')"><div class="card-top"><span class="card-icon">🚣</span><span class="card-title">Off-Site Splash &amp; Giggle Float</span><span class="card-time activity">8:30 AM</span></div><p class="card-detail">For 11 · Trout Montana Fly Shop &amp; Motel · Cascade, MT</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;"><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float').classList.add('open')">Trip Overview →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float-pack').classList.add('open')">What to Pack →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float-food').classList.add('open')">Food &amp; Drinks →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float-safety').classList.add('open')">Safety &amp; Rules →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float-know').classList.add('open')">Good to Know →</span></div></div></div>
     </div>
 
+    <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport has-modal" onclick="document.getElementById('modal-float-directions').classList.add('open')"><div class="card-top"><span class="card-icon">🗺️</span><span class="card-title">Step-by-Step Driving Directions to Splash &amp; Giggle Float</span></div><p class="card-detail">49.5 miles · 51 min from the ranch</p><span class="card-view-details">View Directions →</span></div></div>
     <div class="tl-item"><div class="tl-dot meal"></div><div class="tl-card meal"><div class="card-top"><span class="card-icon">🍽️</span><span class="card-title">Dinner in the Clubhouse</span><span class="card-time meal">6:00 PM</span></div></div></div>
     <div class="tl-item"><div class="tl-dot game"></div><div class="tl-card game"><div class="card-top"><span class="card-icon">🎴</span><span class="card-title">Disney Apples to Apples</span><span class="card-time game">7:30 PM</span></div><p class="card-detail">Family game night!</p></div></div>
   </div>
@@ -661,6 +662,35 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <p class="site-meta"><strong>Includes:</strong> Picnic lunch to go</p>
       <div class="site-section">About Sluice Boxes State Park</div>
       <p class="site-addinfo">Sluice Boxes State Park sits along Belt Creek canyon near Monarch, Montana — a dramatic landscape of limestone cliffs, waterfalls, and rugged terrain carved by Belt Creek. The park takes its name from the gold mining operations of the 1800s. A guided hike brings you through this stunning canyon with incredible views of Montana's Rocky Mountain Front. Don't forget your camera!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Float Driving Directions -->
+<div id="modal-float-directions" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🗺️ Driving Directions</span><button class="site-modal-close" onclick="document.getElementById('modal-float-directions').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🗺️ Ranch → Trout Montana Fly Shop &amp; Motel</h2>
+      <p class="site-meta"><strong>Total:</strong> 49.5 miles · 51 min via US-87 &amp; I-15</p>
+      <p class="site-meta"><strong>Destination:</strong> 132 1st St N · Cascade, MT 59421</p>
+
+      <div class="site-section">Step-by-Step Directions</div>
+      <ol style="margin:0 0 14px 18px;padding:0;line-height:2.1;color:var(--navy);font-size:14px;">
+        <li>Head toward Armington Rd on Old Armington Rd <em style="color:var(--mid-gray);font-size:12px;">(371 ft)</em></li>
+        <li>Turn right onto Armington Rd <em style="color:var(--mid-gray);font-size:12px;">(0.5 mi)</em></li>
+        <li>Turn left onto MT Highway 200 (US-87) <em style="color:var(--mid-gray);font-size:12px;">(0.1 mi)</em></li>
+        <li>Take the 1st exit from roundabout onto US Highway 89 (US-87 N / US-89 N) <em style="color:var(--mid-gray);font-size:12px;">(24.8 mi)</em></li>
+        <li>Continue on Country Club Blvd (I-15-BR S) <em style="color:var(--mid-gray);font-size:12px;">(0.6 mi)</em></li>
+        <li>Take left ramp onto I-15 S toward Helena <em style="color:var(--mid-gray);font-size:12px;">(22.6 mi)</em></li>
+        <li>Take exit 256 toward MT-68 / Cascade <em style="color:var(--mid-gray);font-size:12px;">(0.3 mi)</em></li>
+        <li>Turn left onto 1st St N (MT-68) <em style="color:var(--mid-gray);font-size:12px;">(0.5 mi)</em></li>
+        <li>Turn left — <strong>destination will be on your left</strong> <em style="color:var(--mid-gray);font-size:12px;">(62 ft)</em></li>
+      </ol>
+
+      <div style="background:var(--light-gray);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--navy);margin-top:4px;">
+        📍 <strong>Trout Montana Fly Shop &amp; Motel</strong><br>132 1st St N · Cascade, MT 59421
+      </div>
     </div>
   </div>
 </div>
