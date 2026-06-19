@@ -461,7 +461,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     </div>
     <div class="concurrent">
       <span class="concurrent-label">Ranch Group</span>
-      <div class="tl-item" style="margin-bottom:0;"><div class="tl-dot activity"></div><div class="tl-card activity has-modal" onclick="document.getElementById('modal-float').classList.add('open')"><div class="card-top"><span class="card-icon">🚣</span><span class="card-title">Off-Site Splash &amp; Giggle Float</span><span class="card-time activity">8:30 AM</span></div><p class="card-detail">For 11 · Trout Montana Fly Shop & Motel · Cascade, MT</p><span class="card-view-details">View Details →</span></div></div>
+      <div class="tl-item" style="margin-bottom:0;"><div class="tl-dot activity"></div><div class="tl-card activity has-modal" onclick="document.getElementById('modal-float').classList.add('open')"><div class="card-top"><span class="card-icon">🚣</span><span class="card-title">Off-Site Splash &amp; Giggle Float</span><span class="card-time activity">8:30 AM</span></div><p class="card-detail">For 11 · Trout Montana Fly Shop &amp; Motel · Cascade, MT</p><div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;"><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float').classList.add('open')">Trip Overview →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float-pack').classList.add('open')">What to Pack →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float-food').classList.add('open')">Food &amp; Drinks →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float-safety').classList.add('open')">Safety &amp; Rules →</span><span class="card-view-details" style="margin-top:0;" onclick="event.stopPropagation();document.getElementById('modal-float-know').classList.add('open')">Good to Know →</span></div></div></div>
     </div>
 
     <div class="tl-item"><div class="tl-dot meal"></div><div class="tl-card meal"><div class="card-top"><span class="card-icon">🍽️</span><span class="card-title">Dinner in the Clubhouse</span><span class="card-time meal">6:00 PM</span></div></div></div>
@@ -675,6 +675,78 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <p class="site-meta"><strong>Location:</strong> Trout Montana Fly Shop &amp; Motel · 132 1st St. N. · Cascade, MT 59421</p>
       <div class="site-section">Details</div>
       <p class="site-addinfo">A fun river float experience departing from the legendary Trout Montana Fly Shop & Motel in Cascade. Float Montana's beautiful rivers and enjoy the scenery from the water — a classic Big Sky summer adventure perfect for the whole family!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Float: What to Pack -->
+<div id="modal-float-pack" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🚣 What to Pack</span><button class="site-modal-close" onclick="document.getElementById('modal-float-pack').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🎒 Duds, Gear &amp; Sun Protection</h2>
+      <div class="site-section">Clothing &amp; Gear</div>
+      <ul style="margin:0 0 14px 18px;padding:0;line-height:2;color:var(--navy);font-size:14px;">
+        <li>Extra clothing &amp; a towel (in case of cold/wet weather)</li>
+        <li>Sturdy, waterproof footwear — <strong>no leather shoes</strong></li>
+        <li>Bathing suit or swim-friendly clothing (swimming holes likely!)</li>
+        <li>Waterproof jacket or rain layer</li>
+        <li>Dry bags provided — use them for phones, wallets, shoes &amp; socks</li>
+      </ul>
+      <div class="site-section">Big Sky Sun Protection</div>
+      <p class="site-addinfo">River sun is intense — sunlight reflects off the water and burns fast. Pack a hat, water-resistant high-quality sunscreen, and sunglasses. Don't skip these!</p>
+      <div class="site-section">Mosquitoes &amp; Bugs</div>
+      <p class="site-addinfo">Montana bugs can be relentless on the river. Bug repellant and bug-proof clothing are strongly recommended, especially on prairie river sections where mosquitoes and gnats are common.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Float: Food & Drinks -->
+<div id="modal-float-food" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🚣 Food &amp; Drinks</span><button class="site-modal-close" onclick="document.getElementById('modal-float-food').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🍔 Grub &amp; Grog</h2>
+      <div class="site-section">What's Provided</div>
+      <p class="site-addinfo">Prairie Mountain provides ample drinking water and an assortment of non-alcoholic beverages. A lunch option is available on every trip.</p>
+      <div class="site-section">What You Can Bring</div>
+      <ul style="margin:0 0 0 18px;padding:0;line-height:2;color:var(--navy);font-size:14px;">
+        <li>Your own food and beverages are welcome</li>
+        <li>Alcoholic drinks are permitted if consumed in moderation and by those of legal age</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Float: Safety & Rules -->
+<div id="modal-float-safety" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🚣 Safety &amp; Rules</span><button class="site-modal-close" onclick="document.getElementById('modal-float-safety').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🦺 Safety &amp; Rules</h2>
+      <div class="site-section">Life Jackets</div>
+      <p class="site-addinfo">Montana law requires all children 11 and under to wear a life jacket at all times. Guests 12+ are strongly encouraged to wear one, especially in early season when water is cold and currents are swift. All passengers must have a properly fitted life jacket with them at all times, even if not being worn. Life jackets are provided to all guests.</p>
+      <div class="site-section">Conservation License</div>
+      <p class="site-addinfo">Montana Fish, Wildlife &amp; Parks requires all users ages 12 and over of FWP river access sites to purchase a Conservation License. Cost: $8 residents · $10 non-residents. Valid for the full license year (March 1–February 28). <strong>Not required if you already have a valid Montana Fishing License.</strong></p>
+      <p class="site-meta" style="margin-top:8px;"><strong>Purchase at:</strong> <a href="https://fwp.mt.gov/buyandapply/conservation-license" target="_blank" style="color:var(--blue-mid);">fwp.mt.gov/buyandapply/conservation-license</a></p>
+      <div class="site-section">Weather Policy</div>
+      <p class="site-addinfo">Trips proceed in nearly all weather. Rain is handled with rain gear provided on board. Lightning will cause the guide to head to shore until the storm passes (~15–30 min). Blizzards or hypothermia risk will cancel the trip. Guest safety is the #1 priority.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Float: Good to Know -->
+<div id="modal-float-know" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🚣 Good to Know</span><button class="site-modal-close" onclick="document.getElementById('modal-float-know').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">💡 Good to Know</h2>
+      <div class="site-section">Getting There &amp; Back</div>
+      <p class="site-addinfo">All trips begin at a designated location where you'll meet your guide and follow them to the start point. Every trip includes one free vehicle shuttle — your vehicle will be relocated to the destination point by a specialized contractor while you're on the water.</p>
+      <div class="site-section">Will I Get Wet?</div>
+      <p class="site-addinfo">Most rivers have little to no whitewater, so you can stay dry if you choose. Most floaters get wet feet stepping in and out. A small amount of water can collect in the inner raft floor. Dry bags are provided for phones, wallets, shoes, towels, and anything you want to keep dry.</p>
+      <div class="site-section">Bathrooms</div>
+      <p class="site-addinfo">Montana is wild — don't expect many bathroom facilities on the river. Launch and destination sites usually have a primitive vault toilet. Mid-trip, guides handle nature calls discreetly and always carry toilet paper, hand sanitizer, and trash bags. Very common on river trips — no need to be embarrassed!</p>
     </div>
   </div>
 </div>
