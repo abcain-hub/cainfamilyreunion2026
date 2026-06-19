@@ -382,6 +382,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
       <div class="tl-item" style="margin-bottom:0;"><div class="tl-dot meal"></div><div class="tl-card meal"><div class="card-top"><span class="card-icon">🍳</span><span class="card-title">Brunch in the Clubhouse</span><span class="card-time meal">9:00 – 11:30 AM</span></div><p class="card-detail">For 11</p></div></div>
     </div>
 
+    <div class="tl-item"><div class="tl-dot transport"></div><div class="tl-card transport has-modal" onclick="document.getElementById('modal-bearcat-directions').classList.add('open')"><div class="card-top"><span class="card-icon">🗺️</span><span class="card-title">Step-by-Step Driving Directions to Bear Cat Canyon Ranch</span></div><p class="card-detail">13.52 miles · 16 min from the ranch</p><span class="card-view-details">View Directions →</span></div></div>
+
     <div class="tl-item"><div class="tl-dot activity"></div><div class="tl-card activity has-modal" onclick="document.getElementById('modal-sluice').classList.add('open')"><div class="card-top"><span class="card-icon">🥾</span><span class="card-title">Guided Sluice Boxes Hike</span><span class="card-time activity">11:00 AM</span></div><p class="card-detail">For 11 · Picnic lunch to go</p><div class="card-tags"><span class="tag">Picnic Lunch Included</span></div><span class="card-view-details">View Details →</span></div></div>
     <div class="tl-item"><div class="tl-dot ride"></div><div class="tl-card ride has-modal" onclick="document.getElementById('modal-ride').classList.add('open')"><div class="card-top"><span class="card-icon">🐎</span><span class="card-title">2-Hour Bearcat Canyon Trail Ride</span><span class="card-time ride">2:00 PM</span></div><p class="card-detail">For 7 · Aaron, Renee, Connor, Sawyer, Ashley, Kyle & Abigail</p><p class="card-detail">🚗 Depart 1:45 for Bearcat Canyon Ranch</p><span class="card-view-details">View Details →</span></div></div>
     <div class="tl-item"><div class="tl-dot bingo"></div><div class="tl-card bingo"><div class="card-top"><span class="card-icon">🤠</span><span class="card-title">Cowboy Bingo</span><span class="card-time bingo">5:15 PM</span></div></div></div>
@@ -800,6 +802,30 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
         <li>Insect repellent</li>
         <li>Waterproof jacket</li>
       </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Bear Cat Canyon Ranch Driving Directions -->
+<div id="modal-bearcat-directions" class="site-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="site-modal-box">
+    <div class="site-modal-bar"><span>🗺️ Driving Directions</span><button class="site-modal-close" onclick="document.getElementById('modal-bearcat-directions').classList.remove('open')">&times;</button></div>
+    <div class="site-modal-body">
+      <h2 class="site-modal-title">🗺️ Ranch → Bear Cat Canyon Ranch</h2>
+      <p class="site-meta"><strong>Total:</strong> 13.52 miles · 16 min</p>
+      <p class="site-meta"><strong>Via:</strong> US-89</p>
+      <p class="site-meta"><strong>Destination:</strong> 5890 US Highway 89, Belt, MT 59412</p>
+      <div class="site-section">Step-by-Step Directions</div>
+      <ol style="margin:0 0 14px 18px;padding:0;line-height:2.1;color:var(--navy);font-size:14px;">
+        <li>Head toward Armington Rd on Old Armington Rd <em style="color:var(--mid-gray);font-size:12px;">(371 ft)</em></li>
+        <li>Turn right onto Armington Rd <em style="color:var(--mid-gray);font-size:12px;">(0.5 mi)</em></li>
+        <li>Turn left onto MT Highway 200 (US-87) <em style="color:var(--mid-gray);font-size:12px;">(0.1 mi)</em></li>
+        <li>Take the 2nd exit from roundabout onto US Highway 89 (US-89) <em style="color:var(--mid-gray);font-size:12px;">(12.5 mi)</em></li>
+        <li>Turn right <em style="color:var(--mid-gray);font-size:12px;">(0.3 mi)</em></li>
+      </ol>
+      <div style="background:var(--light-gray);border-radius:8px;padding:10px 14px;font-size:13px;color:var(--navy);margin-top:4px;">
+        📍 <strong>Bear Cat Canyon Ranch</strong><br>5890 US Highway 89, Belt, MT 59412
+      </div>
     </div>
   </div>
 </div>
