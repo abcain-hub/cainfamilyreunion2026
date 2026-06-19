@@ -46,6 +46,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .topbar-left{display:flex;align-items:center;gap:10px;}
 .topbar-stars{color:var(--gold-light);font-size:18px;letter-spacing:4px;}
 .topbar-right{color:rgba(255,255,255,.55);font-size:11px;font-weight:500;text-align:right;letter-spacing:.04em;}
+.topbar-title{color:white;font-size:13px;font-weight:700;letter-spacing:.04em;opacity:0;transition:opacity .35s ease;pointer-events:none;}
+.topbar-title.visible{opacity:1;}
 @media(max-width:520px){.topbar-right{display:none;}.crest-brand img{height:56px;}.topbar-stars{font-size:14px;letter-spacing:2px;}}
 
 /* ── HERO ── */
@@ -182,7 +184,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 
 <!-- ═══════════════════════════════ TOPBAR ═══════════════════════════════ -->
 <nav class="topbar">
-  <div class="topbar-left"><span class="topbar-stars">❤️🤍💙</span></div>
+  <div class="topbar-left"><span class="topbar-stars">❤️🤍💙</span><span class="topbar-title">Cain Family Reunion</span></div>
   <div class="topbar-right">Montana · 2026<br>June 30 – July 10</div>
 </nav>
 
@@ -865,6 +867,17 @@ function showDay(idx){
   const top=nav.offsetTop - (window.innerWidth<=480 ? 92 : 92);
   window.scrollTo({top:top,behavior:'smooth'});
 }
+
+// Show "Cain Family Reunion" in topbar only after hero scrolls out of view
+(function(){
+  const hero=document.querySelector('.hero');
+  const title=document.querySelector('.topbar-title');
+  if(!hero||!title)return;
+  const obs=new IntersectionObserver(([entry])=>{
+    title.classList.toggle('visible',!entry.isIntersecting);
+  },{threshold:0});
+  obs.observe(hero);
+})();
 </script>
 </body>
 </html>
